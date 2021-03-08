@@ -11,25 +11,12 @@ body{
 .container{
     background: rgba(0, 0,0, 0.8);
 }
-.logo{
-    width:100%;
-    display:flex;
-    justify-content:left;
-    align-items:center;
-}
-
-.logo img{
-    width:33%;
-    border:3px solid white;
-    border-radius: 50px;
-
-}
 .navbar{
     display:flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     cursor: pointer;
 }
 .nav-list{
@@ -37,7 +24,6 @@ body{
     display:flex;
     align-items:center;
     background: rgb(248, 88, 88);
-
 }
 .nav-list li{
     list-style: none;
@@ -53,7 +39,7 @@ body{
 }
 .rightnav{
     display: flexbox;
-    width: 50%;
+    width: 30%;
     text-align: right;
 }
 #search{
@@ -134,14 +120,14 @@ body{
     text-decoration: underline;
 }
 .second-section >img{
-    width:40%;
+    width:20%;
 }
 #contacts{
-    height:30vh;
+    /* height:30vh; */
     display: flex;
     align-items: left;
     justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
 }
 #contacts div{
     font-size: 30px;
@@ -150,11 +136,111 @@ body{
 }
 #contacts a{
     text-decoration: none;
+    display:flex;
+    flex-direction: row;
+ /* justify-content: center; */
+ align-items: center;
+    /* padding:10px; */
+    /* margin:10px; */
 }
+/* #contacts a >div{
+    padding: 10px;
+} */
 #contacts img{
-    width: 40px;
+    width: 50px;
+    height:50px;
     border-radius: 50%;
 }
+
 hr{
     margin: 30px;
+}
+.nav-list{
+    width:70%;
+    border-radius: 20px;
+}
+.nav-list >li > a{
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+.nav-list >li:hover{
+       background-color: rgb(40, 115, 177);
+}
+.logo{
+    width:100px;
+    border-radius: 50%;
+}
+.myresume:hover{
+    width:60%;
+}
+a{
+    color:white
+}
+.gms{
+    padding: 20px;
+}
+.cr{
+    padding:10px;
+    width: 100%;
+    font-size:small !important;
+    text-align: center;
+}
+.dnm{
+    display:block;
+    opacity: 0;
+    position: fixed;
+    top:0;
+    left:0;
+    height: 0vh;
+    width: 100%;
+    background: url("/img/back1.jpg");
+    background-size: cover;
+    color:black;
+    z-index: -4;
+    transition: 500ms all;
+}
+.dnm > ul{
+    height: 100vh;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.dnm > ul >li{
+    background:white;
+    margin: 10px;
+    border-radius: 30px;
+    padding:10px;
+    list-style-type:none;
+}
+.dnm > ul >li:hover{
+    background:rgb(167, 167, 248);
+}
+.dnm > ul > li > a{
+    text-decoration:  none;
+    color:black;
+    font-size: 30px;
+}
+.dn{
+    z-index: 3;
+    opacity: 1;
+    height: 100vh;
+    transition: 500ms all;
+display:block;
+}
+@media (max-width:1011px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .nav-bar{
+        flex-direction: column;
+    }
+    .rightnav{
+        text-align: center;
+
+    }
+    
 }

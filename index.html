@@ -8,29 +8,39 @@
     <title>IEDUCATE-TRANSFORMING  ONLINE EDUCATION</title>
 </head>
 <body>
+    <div class="os" >
+        <img src="img/icon3.png"  class="osa"style="position: fixed; top:0; right:0px; width: 70px; border-radius: 50%;  z-index: 5; ">
+        <div class="dnm">
+            <ul>
+                <li><a href="#home" class="homec">Home</a></li>
+                <li><a href="#about" class="aboutc">About</a></li>
+                <li><a href="#contacts" class="contactsc">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="container">
         <nav class="navbar background">
             <ul class="nav-list">
-                <div class="logo"><img src="img/diptanshu.jpg" alt="logo" class="src">
-                </div>
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#services">services</a></li>
-                <li><a href="#contacts">contacts</a></li>
+                <img src="img/diptanshu.jpg" alt="logo" class="logo">
+                <li><a href="#Home">home</a></li>
+                <li><a href="#About">about</a></li>
+                <li><a href="#Services">services</a></li>
+                <li><a href="#Contacts">contacts</a></li>
+                
             </ul>
-            <div class="rightnav">
+            <!-- <div class="rightnav">
                 <input type="text" name="search" id="search">
-            <button class="btn btn-sm">Search</button>       
+            <button class="btn btn-sm">Search</button>        -->
          </div>
         </nav>
         <section class="background first-section" id="home">
             <div class="box-main">
                 <div class="firsthalf">
-                    <p class="text-big">Hey i am a web designer</p>
+                    <p class="text-big">Hey! I am a Web designer.</p>
                     <p class="text-small">Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization.</p>
                   <div class="buttons">
-                      <button class="btn">Hire me</button>
-                      <button class="btn">!!!</button>
+                      <button class="btn"></button>
+                      <button class="btn"></button>
                   </div>         
                 </div>
                 <div class="secondhalf">
@@ -41,18 +51,49 @@
         </section>
         <section id="about" class="second-section">
             <div>
-            I am 2nd Year EC Student from SIRT, Bhopal. I love coding, web development, artificial intelligence, machine learning, deep learning, android development, ios development, game development, UI/UX desgining and many more beyoud your thinking capacity.😁
+            I am 2nd Year EC Student from SIRT, Bhopal. I love coding, web development, android development, UI/UX designing and many more beyond your thinking capacity.
             </div>    
             <img class="myresume" src="img/resume2.jpeg"/>
         </section>
         <hr/>
         <footer id="contacts">
-            <div><img src="img/gmail.jpg"/> diptanshubhawsar50@gmail.com</div>
-            <div><a href="https://www.facebook.com/diptanshu.bhawsar"><img src="img/facebook.png"/></a></div>
-            <div><a href="https://www.instagram.com/diptanshu_bhawsar"><img src="img/instagram.png"/></a></div>
-            <div><a href="https://www.linkedin.com/in/diptanshu-bhawsar-503b201aa"><img src="img/linkedin.png"/></a></div>
+            <div style="font-size: 40px; padding: 10px;">Contacts</div>
+            <div><a><img src="img/gmail.jpg"/><div class="gms">diptanshubhawsar50@gmail.com</div></a></div>
+            <div><a href="https://www.facebook.com/diptanshu.bhawsar"><img src="img/facebook.png"/><div class="gms">facebook</div></a></div>
+            <div><a href="https://www.instagram.com/diptanshu_bhawsar"><img src="img/instagram.png"/><div class="gms">Instagram</div></a></div>
+            <div><a href="https://www.linkedin.com/in/diptanshu-bhawsar-503b201aa"><img src="img/linkedin.png"/><div class="gms">linkedin</div></a></div>
+            <div><a href="https://twitter.com/DiptanshuBhaws1"><img src="img/twitter.png"/><div class="gms">Twitter</div></a></div>
+            <hr/>
+            <div class="cr">ALL RIGHT RESERVED © 2021</div>
         </footer>
     </div>
-  
+    <script>
+        var os = document.querySelector(".osa");
+        var dnm = document.querySelector(".dnm")
+        os.addEventListener("click",()=>{
+            dnm.classList.toggle("dn");
+            console.log("Show")
+        })
+        var hc = document.querySelector(".homec");
+        var ac = document.querySelector(".aboutc");
+        var cc = document.querySelector(".contactsc");
+        hc.addEventListener("click",()=>{
+            dnm.classList.toggle("dn");
+            console.log("Show")
+        })
+        ac.addEventListener("click",()=>{
+            dnm.classList.toggle("dn");
+            console.log("Show")
+        })
+        cc.addEventListener("click",()=>{
+            dnm.classList.remove("dn");
+            console.log("Show")
+        })
+    </script>
+    <!-- <div>
+        <meta name="viewport"
+        content="width=device-width",
+        initial-scale="1.0">
+    </div> -->
 </body>
 </html>
